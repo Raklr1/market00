@@ -115,4 +115,7 @@ pipeline {
             echo "Kubernetes自动部署完成"
         }
     }
+    triggers {
+        githubPush()
+    }
 }
